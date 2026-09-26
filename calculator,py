@@ -1,0 +1,58 @@
+print("hello there, tell me what do you want to calculate choose among the give signs!")
+print("+, -, *, /, %, **, //")
+op = input("Enter the operation you want to perform:  ")
+a= int(input("Enter the fist number: "))
+b = int(input("Enter the second number: "))
+
+def addition(a,b):  
+   c = a + b
+   return c
+
+def subctract(a,b):
+    c = a - b
+    return c 
+
+def multiply(a,b):
+    c = a*b
+    return c 
+
+def divide(a,b):
+    c= a / b
+    return c 
+
+def modulus(a,b):
+    c = a / b 
+    return c 
+
+def power(a,b):
+    c = a**b
+    return c 
+
+def floor_divide(a,b):
+    c = a // b
+    return c 
+
+if op == "+":
+    print(addition(a,b))
+
+
+elif op == "-":
+    print(subctract(a,b))
+
+elif op == "*":
+    print(multiply(a,b))
+
+elif op == "/":
+     print(divide(a,b))
+
+elif op == "//":
+     print(floor_divide(a,b))
+
+elif op == "**":
+     print(power(a,b))
+
+elif op == "%":
+     print(modulus(a,b))
+
+else:
+    print("Invaled operator")
