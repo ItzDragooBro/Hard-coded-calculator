@@ -8,7 +8,7 @@ def addition(a,b):
    c = a + b
    return c
 
-def subctract(a,b):
+def subtract(a,b):
     c = a - b
     return c 
 
@@ -21,7 +21,7 @@ def divide(a,b):
     return c 
 
 def modulus(a,b):
-    c = a / b 
+    c = a % b 
     return c 
 
 def power(a,b):
@@ -37,7 +37,7 @@ if op == "+":
 
 
 elif op == "-":
-    print(subctract(a,b))
+    print(subtract(a,b))
 
 elif op == "*":
     print(multiply(a,b))
